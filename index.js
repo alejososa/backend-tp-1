@@ -68,12 +68,12 @@ manager.addProduct(
     "1112",
     1000,
 );
-//producto sin campo completo
+//producto sin campo completo, tira "complete all fields"
 manager.addProduct(
     "algo",
     600,
 );
-//producto con codigo repetido
+//producto con codigo repetido, tira"code already used"
 manager.addProduct(
     "manaos",
     "gaseosa",
@@ -84,7 +84,7 @@ manager.addProduct(
 )
 
 console.log(manager.getProducts());
-// busqueda por id, introducir id en el campo vacio
+// busqueda por id, introducir id en el campo vacio, si true= product , si false "product not found"
 
 const product= manager.getProductsById(/*id*/);
 if (product){
